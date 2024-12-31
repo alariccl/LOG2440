@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "name": "Compilers: Principles, Techniques, and Tools",
+            "price": 70,
+            "status": "new",
+            "seller": "Jean Untel",
+            "image": "assets/images/item-1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Design Patterns",
+            "price": 40,
+            "status": "used",
+            "seller": "Jeanne Unetelle",
+            "image": "assets/images/item-2.jpg"
+        },
+        {
+            "id": 3,
+            "name": "The C Programming Language",
+            "price": 55,
+            "status": "new",
+            "seller": "Simon Tremblay",
+            "image": "assets/images/item-3.jpg"
+        }
+    ]
+}

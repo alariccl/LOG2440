@@ -1,0 +1,18 @@
+{
+  "name": "20243-tp1",
+  "version": "1.0.0",
+  "description": "Travail pratique 1 pour le cours LOG2440",
+  "scripts": {
+    "start": "http-server -a localhost -p 3000 -c-1 -o src/index.html",
+    "test:headless": "cypress run --browser chrome",
+    "test": "cypress open"
+  },
+  "author": "LOG2440",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^14.1.1"
+  },
+  "devDependencies": {
+    "cypress": "13.13.1"
+  }
+}

@@ -1,0 +1,100 @@
+/* TODO : Utiliser une grille pour l'affichage des éléments */
+#description-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+  padding: 20px;
+}
+
+/*  TODO : Gérer la taille de l'image */
+#description-container #item-container img {
+  width: 600px;
+  height: 600px;
+  object-fit: contain;
+}
+
+#second-column {
+  display: grid;
+  padding: 10px;
+}
+
+#item-description-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: fit-content;
+}
+
+#item-description-container .justify-left {
+  justify-content: left;
+}
+
+#item-description-container .justify-right {
+  justify-content: flex-end;
+}
+
+/* TODO : Compléter la mise en page du formulaire */
+form fieldset {
+  padding: 10px 20px;
+  height: 100%;
+}
+
+legend {
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  float: right;
+  border-radius: 5px;
+}
+
+/* TODO : Limiter la taille de la zone de texte */
+textarea {
+  padding: auto;
+  width: 100%;
+  min-width: 100px;
+  max-width: 600px;
+  height: 100px;
+}
+
+form input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+#nom {
+  width: 100%;
+  min-width: 100px;
+  max-width: 600px;
+}
+
+/* CSS fourni  */
+
+#item-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#item-description-container p {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 10px;
+}

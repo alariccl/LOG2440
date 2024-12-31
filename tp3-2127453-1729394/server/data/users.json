@@ -1,0 +1,17 @@
+[
+  {
+    "username": "admin",
+    "password": "admin",
+    "token": "log2440-admin"
+  },
+  {
+    "username": "a",
+    "password": "b",
+    "token": "f5f9c523-416c-4338-92ea-415542ad978f"
+  },
+  {
+    "username": "asdf",
+    "password": "asdf",
+    "token": "8cd4922a-2725-4238-b3bc-0f0b06627ea5"
+  }
+]

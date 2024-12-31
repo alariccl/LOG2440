@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page de détails</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" type="image/x-icon" href="./assets/favico.ico" />
+  <script src="assets/js/details.js" type="module" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1><a href="index.html" style="text-decoration: none;">Système de journalisation</a></h1>
+  </header>
+
+  <main>
+    <section id="stats-container">
+      <!-- TODO : Générer ces statistiques dynamiquement -->
+      <!-- <p>Messages totaux : <span id="messages-total">5</span></p>
+      <p>Messages de niveau Debug : <span id="messages-debug">2</span></p>
+      <p>Messages de niveau Info : <span id="messages-info">1</span></p>
+      <p>Messages de niveau Warning : <span id="messages-warning">1</span></p>
+      <p>Messages de niveau Error : <span id="messages-error">1</span></p>
+      <p>Nombre de sessions : <span id="sessions-total">3</span></p> -->
+    </section>
+    <section id="search-container">
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Rechercher dans un message">
+        <button type="submit" id="search-button"><i class="fa fa-search"></i></button>
+      </form>
+    </section>
+    <section id="logs-details-container">
+      <section id="logs-filters">
+        <h2>Filtrer par : </h2>
+        <div>
+          <div id="sort-order-radios">
+            <h4>Date : </h4>
+            <label><input type="radio" name="date-sort" id="date-asc">Ascendant</label>
+            <label><input type="radio" name="date-sort" id="date-des">Descendant</label>
+          </div>
+          <div id="level-checkbox">
+            <h4>Niveaux : </h4>
+            <section class="rounder-border">
+              <label><input id="debug-input" type="checkbox">Debug</label>
+              <label><input id="info-input" type="checkbox">Info</label>
+              <label><input id="warn-input" type="checkbox">Warning</label>
+              <label><input id="error-input" type="checkbox">Error</label>
+            </section>
+          </div>
+          <div id="button-container">
+            <h4>Session : </h4>
+            <button id="session-group-btn">Grouper</button>
+          </div>
+          <button id="filter-reset-btn">Réinitialiser</button>
+        </div>
+      </section>
+      <section id="log-display-container">
+        <!-- TODO : Générer le contenu dynamiquement -->
+        <!-- <div class="log-detail-message warning">
+          <div class="log-detail-info">
+            <span>[2024-08-20 18:43:13]</span>
+            <span>1234-rtgh</span>
+            <button class="fa fa-trash"></button>
+          </div>
+          <p>Ceci est un message d'avertissement</p>
+        </div>
+        <div class="log-detail-message info">
+          <div class="log-detail-info">
+            <span>[2024-08-20 18:45:28]</span>
+            <span>abcd-1234</span>
+            <button class="fa fa-trash"></button>
+          </div>
+          <p>Ceci est un message d'information beaucoup plus long qui prend plus de place! <br>Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum.</p>
+        </div>
+        <div class="log-detail-message debug">
+          <div class="log-detail-info">
+            <span>[2024-08-20 19:15:08]</span>
+            <span>defg-5678</span>
+            <button class="fa fa-trash"></button>
+          </div>
+          <p>Ceci est un message de debug</p>
+        </div>
+        <div class="log-detail-message error">
+          <div class="log-detail-info">
+            <span>[2024-08-20 19:35:32]</span>
+            <span>hijk-4346</span>
+            <button class="fa fa-trash"></button>
+          </div>
+          <p>Ceci est un message d'erreur!!!</p>
+        </div> -->
+      </section>
+    </section>
+  </main>
+</body>
+
+</html>

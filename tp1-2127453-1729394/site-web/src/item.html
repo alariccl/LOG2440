@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/img/favico.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- TODO : Ajouter les liens vers les bons fichiers CSS -->
+    <title>PolyManuel</title>
+    <link rel="stylesheet" href="./assets/css/shared.css" />
+    <link rel="stylesheet" href="./assets/css/item.css" />
+    <script src="./assets/js/item.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <a href="./index.html" id="logo-container" class="flex-center">
+          <img alt="logo" src="assets/img/logo.png" title="Accueil" />
+        </a>
+        <ul class="flex-center">
+          <li>
+            <a href="./add.html" title="Créer une anonce"
+              >Annonce <i class="fa fa-book"></i
+            ></a>
+          </li>
+          <li>
+            <a href="./about.html" title="Information"
+              >À propos <i class="fa fa-circle-info"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="item-main">
+      <!-- TODO : Compléter l'affichage de la page -->
+      <h1 id="item-title">Compilers: Principles, Techniques, and Tools</h1>
+      <section id="description-container">
+        <section id="item-container">
+          <img id="item-preview" src="./assets/img/item-1.jpg" />
+        </section>
+        <div id="second-column">
+          <section id="item-description-container">
+            <p class="justify-left">Prix :</p>
+            <p id="item-price" class="justify-right">70$</p>
+            <p class="justify-left">État :</p>
+            <p id="item-state" class="justify-right">Nouveau</p>
+            <p class="justify-left">Vendeur :</p>
+            <p id="item-seller" class="justify-right">Jean Untel</p>
+          </section>
+          <section id="form-container">
+            <!-- TODO : Compléter le formulaire  -->
+            <form id="contact-form" method="post">
+              <fieldset>
+                <legend>Envoyez un message :</legend>
+                <label for="nom">Votre nom :</label>
+                <input id="nom" type="text" pattern="^\S.*$" required /><br />
+                <label for="message">Message :</label>
+                <textarea
+                  id="message"
+                  placeholder="Cet item est-il encore disponible?"
+                  oninput="validateMessage(this)"
+                  required
+                ></textarea
+                ><br />
+                <input type="submit" value="Envoyer le message" />
+              </fieldset>
+            </form>
+          </section>
+        </div>
+        <!-- TODO : Compléter la description de l'item -->
+      </section>
+    </main>
+
+    <footer>
+      <!-- TODO : Ajouter les bons identifiants -->
+      <span id="student-1">Chan-Lock, Alaric 1729394</span>
+      <span id="student-2">Amami, Yasmine 2127453</span>
+    </footer>
+  </body>
+</html>

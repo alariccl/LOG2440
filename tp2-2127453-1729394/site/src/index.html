@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyJournal</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favico.ico" />
+    <script src="assets/js/main.js" type="module" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Système de journalisation</h1>
+        <a href="./details.html" id="details-link">Page de détails</a>
+        <section id="main-page-controls">
+            <h3 id="empty-warning">Aucun journal disponible</h3>
+            <button id="default-logger-btn"> Charger les données par défaut</button>
+            <button id="reset-logger-btn"> Réinitialiser le journal</button>
+        </section>
+    </header>
+    <main id="main-content">
+        <form id="log-form">
+            <input type="text" id="log-input" name="log_text" placeholder="Entrez un message">
+            <select name="log_level" id="log-level">
+                <option value="debug">Debug</option>
+                <option value="info">Info</option>
+                <option value="warning">Warning</option>
+                <option value="error">Error</option>
+            </select>
+            <button type="submit">Envoyer</button>
+        </form>
+        <section id="log-output">
+            <h2>Messages</h2>
+            <!-- TODO : Générer les messages dynamiquement -->
+            <ul id="log-list"></ul>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+/* TODO : Présenter le formulaire à la verticale */
+#form-primary-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* TODO : Aligner correctement le contenu  */
+form fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1000px;
+}
+
+#form-primary-content #item-information-set .data-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  grid-row-gap: 15px;
+}
+
+#form-primary-content #contact-information-set .data-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  grid-row-gap: 15px;
+}
+
+.submit-control {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.data-container .checkbox-container {
+  display: flex;
+  justify-content: right;
+}
+
+/* CSS fourni */
+
+h1 {
+  text-align: center;
+}
+
+#form-primary-content legend {
+  font-weight: bold;
+}
+
+.data-container {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+fieldset {
+  margin: 10px;
+}
+
+input,
+select {
+  padding: 6px 12px 6px 12px;
+  border-radius: 5px;
+  border-style: none;
+}

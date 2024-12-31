@@ -1,0 +1,33 @@
+{
+  "name": "20243-tp2",
+  "version": "1.0.0",
+  "description": "Site Web de TP2 en LOG2440",
+  "license": "ISC",
+  "author": "LOG2440",
+  "type": "module",
+  "scripts": {
+    "start": "http-server ./src -a localhost -p 3000 -c-1 -o .",
+    "start:headless": "http-server ./src -a localhost -p 3000 -c-1 -s",
+    "cy:open": "cypress open",
+    "cy:headless": "cypress run --browser chrome",
+    "test": "start-server-and-test start http://localhost:3000 cy:open",
+    "test:headless": "start-server-and-test start:headless http://localhost:3000 cy:headless",
+    "test:unit": "cross-env NODE_OPTIONS=--experimental-vm-modules jest --env=jsdom --verbose",
+    "lint": "eslint ./"
+  },
+  "dependencies": {
+    "cross-env": "7.0.3",
+    "http-server": "14.1.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.8.0",
+    "cypress": "13.13.2",
+    "eslint": "^9.8.0",
+    "eslint-plugin-cypress": "^3.5.0",
+    "eslint-plugin-jest": "^28.8.0",
+    "globals": "^15.9.0",
+    "jest": "29.7.0",
+    "jest-environment-jsdom": "29.7.0",
+    "start-server-and-test": "2.0.5"
+  }
+}

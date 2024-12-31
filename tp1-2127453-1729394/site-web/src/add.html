@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/img/favico.ico" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://use.fontawesome.com/releases/v6.1.2/css/all.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- TODO : Ajouter les liens vers les bons fichiers CSS -->
+    <title>PolyManuel</title>
+    <link rel="stylesheet" href="./assets/css/shared.css" />
+    <link rel="stylesheet" href="./assets/css/add.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav id="nav-bar">
+        <a href="./index.html" id="logo-container" class="flex-center">
+          <img alt="logo" src="assets/img/logo.png" title="Accueil" />
+        </a>
+        <ul class="flex-center">
+          <li class="active">
+            <a href="./add.html" title="Créer une anonce"
+              >Annonce <i class="fa fa-book"></i
+            ></a>
+          </li>
+          <li>
+            <a href="./about.html" title="Information"
+              >À propos <i class="fa fa-circle-info"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Création d'une nouvelle annonce</h1>
+      <div class="flex-center" id="form-container">
+        <!-- TODO : Compléter le formulaire -->
+        <form id="form-primary-content" enctype="multipart/form-data">
+          <!-- TODO : Compléter la section -->
+          <fieldset id="item-information-set">
+            <legend>Informations générales</legend>
+            <div class="data-container">
+              <label for="name">Nom du manuel: </label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Assembleur 2"
+                pattern="^\S.*$"
+                required
+              />
+              <label for="price">Prix($): </label>
+              <input type="number" id="price" value="10" min="0" required />
+              <label for="image">Image: </label>
+              <input type="file" id="image" accept="image/*" required />
+              <label for="item-state-select">État du manuel: </label>
+              <select id="item-state-select">
+                <option value="new">Nouveau</option>
+                <option value="used">Usagé</option>
+              </select>
+            </div>
+          </fieldset>
+          <!-- TODO : Implémenter la section de contact -->
+          <fieldset id="contact-information-set">
+            <legend>Information de contact</legend>
+            <div class="data-container">
+              <label for="seller-name">Nom de contact: </label>
+              <input
+                type="text"
+                id="seller-name"
+                placeholder="Votre nom"
+                pattern="^\S.*$"
+                required
+              />
+              <label for="seller-email">Adresse de courriel: </label>
+              <input
+                type="email"
+                id="seller-email"
+                placeholder="Votre courriel"
+                required
+              />
+              <label for="seller-anonymous">Anonymiser dans l'annonce: </label>
+              <div class="checkbox-container">
+                <input
+                  type="checkbox"
+                  id="seller-anonymous"
+                  class="justify-right"
+                />
+              </div>
+            </div>
+          </fieldset>
+          <div class="submit-button flex-center">
+            <input
+              type="submit"
+              value="Soumettre l'annonce"
+              class="submit-control"
+            />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <!-- TODO : Ajouter les bons identifiants -->
+      <span id="student-1">Chan-Lock, Alaric 1729394</span>
+      <span id="student-2">Amami, Yasmine 2127453</span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+#search-button {
+  padding: 5px 10px;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* TODO : Changer le curseur et la couleur du bouton */
+#search-button:hover {
+  cursor: pointer;
+}
+
+.fa-search {
+  color: white;
+  background-color: transparent;
+}
+
+/* TODO : Centrer et compléter le visuel de la barre de recherche */
+#search-form {
+  flex-basis: 60%;
+}
+
+#main-item-list {
+  max-width: 1500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  /* TODO : Ajouter la couleur principale */
+  justify-content: center;
+  background-color: black;
+}
+
+#item-list {
+  gap: 15px;
+  padding: 10px;
+  justify-content: center;
+  /* TODO : afficher les éléments qui débordent sur la prochaine ligne */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* TODO : Compléter la mise en page des vignettes d'items */
+.item-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 475px;
+  height: 475px;
+  text-decoration: none;
+}
+
+.item-container img {
+  width: 60%;
+  height: 80%;
+}
+
+/* TODO : Ajouter un effet d'agrandissement de 10% */
+.item-container:hover img {
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+/* TODO : Utiliser la bonne variable pour la couleur */
+.used-status-new .status-pellet {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--new-condition);
+  border-radius: 50%;
+  opacity: 0;
+}
+.used-status-new:hover .status-pellet {
+  opacity: 100%;
+}
+
+.used-status-used .status-pellet {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  background-color: var(--used-condition);
+  border-radius: 50%;
+  opacity: 0;
+}
+.used-status-used:hover .status-pellet {
+  opacity: 100%;
+}
+
+/* CSS fourni */
+
+#search-input {
+  width: 75%;
+}
+
+.item-container {
+  background-color: var(--container-bg);
+  position: relative;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.item-container:hover .hidden {
+  visibility: visible;
+}
+
+.used-status {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+/* TODO : Compléter les requêtes média pour 500 et 800px */
+
+@media screen and (min-width: 800px) {
+  #search-form {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    flex-basis: 45%;
+  }
+
+  #item-list {
+    justify-content: left;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #search-form {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #item-list {
+    flex-direction: column;
+  }
+
+  .item-container img {
+    display: none;
+  }
+  .item-container {
+    width: 100%;
+    height: 100%;
+  }
+
+  #logo-container img {
+    height: 25px;
+    width: 150px;
+    padding: 25px;
+  }
+
+  .item-name {
+    padding: 5px;
+  }
+
+  .item-price {
+    padding: 5px;
+  }
+}

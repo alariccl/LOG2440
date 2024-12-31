@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/img/favico.ico">
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css" />
+  <link rel="stylesheet" href="./assets/css/shared.css">
+  <!-- TODO : Ajouter les liens vers les bons fichiers CSS -->
+  <title>PolyManuel</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/index.css">
+</head>
+
+<body>
+  <header>
+    <nav id="nav-bar">
+      <a href="./index.html" id="logo-container" class="flex-center">
+        <img alt="logo" src="assets/img/logo.png" title="Accueil">
+      </a>
+      <!-- TODO : Implémenter la barrr de recherche -->
+      <form id="search-form" class="search-form">
+        <input type="text" id="search-input" placeholder="Recherche" />
+        <button id="search-button" type="submit" class="fa fa-2x fa-search"></button>
+      </form>
+      <ul class="flex-right">
+        <li><a href="./add.html" title="Créer une anonce">Annonce <i class="fa fa-book"></i></a></li>
+        <li><a href="./about.html" title="Information">À propos <i class="fa fa-circle-info "></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="main-item-list">
+      <h1>Les dernières annonces</h1>
+      <div id="item-list">
+        <!-- TODO : Completer les vignettes des manuels -->
+        <a href="item.html" id="item-1" class="item-container used-status-new">
+          <div class="item-name">Compilers: Principles, Techniques, and Tools</div>
+          <img src="assets/img/item-1.jpg" alt="manuel-1" class="item-image">
+          <div class="item-price">70$</div>
+          <div class="status-pellet"></div>
+        </a>
+        <a href="item.html" id="item-2" class="item-container used-status-used">
+          <div class="item-name">Design Patterns</div>
+          <img src="assets/img/item-2.jpg" alt="manuel-2" class="item-image">
+          <div class="item-price">40$</div>
+          <div class="status-pellet"></div>
+        </a>
+        <a href="item.html" id="item-3" class="item-container used-status-new">
+          <div class="item-name">The C Programming Language</div>
+          <img src="assets/img/item-3.jpg" alt="manuel-3" class="item-image">
+          <div class="item-price">55$</div>
+          <div class="status-pellet"></div>
+        </a>
+      <div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- TODO : Ajouter les bons identifiants -->
+    <span id="student-1">Chan-Lock, Alaric 1729394</span>
+    <span id="student-2">Amami, Yasmine 2127453</span>
+  </footer>
+</body>
+
+</html>
